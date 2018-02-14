@@ -1,4 +1,0 @@
----
-- shell: "echo b: $(whoami)"
-- include_role: {name: c}
-  become: true

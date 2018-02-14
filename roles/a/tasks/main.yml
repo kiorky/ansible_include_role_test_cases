@@ -1,3 +1,0 @@
----
-- shell: "echo a: $(whoami)"
-- include_role: {name: b}

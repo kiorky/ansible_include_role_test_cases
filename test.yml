@@ -1,4 +1,9 @@
 ---
 - hosts: localhost
   tasks:
-    - include_role: {name: a}
+    - include_role: {name: whoami}
+    - become: true
+      include_role: {name: whoami}
+    - become: true
+      block:
+      - include_role: {name: whoami}

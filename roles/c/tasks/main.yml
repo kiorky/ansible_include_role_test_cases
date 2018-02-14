@@ -1,6 +1,0 @@
----
-- shell: "echo c: $(whoami)"
-  register: failed
-- assert:
-    msg: fail to escalate
-    that: "failed.stdout == 'c: root'"
