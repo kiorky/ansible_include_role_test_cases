@@ -1,4 +1,5 @@
 ---
 - shell: "echo b: $(whoami)"
-- include_role: {name: c, public: true}
-  become: true
+- become: true
+  block:
+  - include_role: {name: c, public: true}
