@@ -1,0 +1,3 @@
+- shell: |
+    set -ex
+    test "x$foo" = 'xbar'
